@@ -1,4 +1,7 @@
 import "./style.css";
-import { RexPaperUi } from "rex-paper-ui/src/index";
+import { RexPaperUi, Button } from "rex-paper-ui/src/index";
 
 new RexPaperUi(document.getElementById("app")!, {});
+new Button({
+    text: "Hello",
+});

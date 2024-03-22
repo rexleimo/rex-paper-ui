@@ -1,6 +1,6 @@
 import Paper from "paper";
 import { RexPaperOptions } from "./interfaces";
-
+import RexPaperUtils from "./RexPaperUtils";
 class RexPaperUi {
     _el: HTMLElement | null = null;
     _canvas: HTMLCanvasElement | null = null;
@@ -17,7 +17,7 @@ class RexPaperUi {
 
         this._canvas = canvas;
         el.appendChild(this._canvas);
-
+        RexPaperUtils.getInstance().setCanvas(this._canvas);
         Paper.setup(this._canvas);
     }
 }

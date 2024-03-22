@@ -3,10 +3,13 @@ import {
     RexComponentOptions,
 } from "../../interfaces";
 
-export abstract class RexComponent implements IRexComponent {
-    options?: RexComponentOptions | undefined;
+export abstract class RexComponent<T extends RexComponentOptions>
+    implements IRexComponent
+{
+    paperElement: paper.Group | null = null;
+    options?: T | undefined;
 
-    constructor(options?: RexComponentOptions) {
+    constructor(options?: T) {
         this.options = options;
     }
 }
