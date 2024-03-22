@@ -21,6 +21,14 @@
       "tags": [
         "frontend-web"
       ]
+    },
+    {
+      "packageName": "rex-paper-ui",
+      "projectFolder": "packages/rex-paper-ui",
+      "reviewCategory": "production",
+      "tags": [
+        "frontend-web"
+      ]
     }
   ]
 }
