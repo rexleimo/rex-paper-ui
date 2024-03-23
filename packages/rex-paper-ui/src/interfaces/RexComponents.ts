@@ -1,3 +1,10 @@
+export type RexComponentColor =
+    | "primary"
+    | "danger"
+    | "neutral"
+    | "success"
+    | "warning";
+
 export interface RexComponentOptions {
     id?: number;
     radius?: number;
@@ -16,4 +23,6 @@ export interface RexComponent {
     // 样式
     style?: any;
     options?: RexComponentOptions;
+
+    childrenMap: Map<string, paper.Item>;
 }
