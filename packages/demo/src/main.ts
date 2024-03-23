@@ -4,6 +4,7 @@ import {
     Button,
     ButtonGroup,
     CheckBox,
+    Radio,
 } from "rex-paper-ui/src/index";
 import pulsIcon from "./plus.svg";
 import { Point } from "paper";
@@ -39,4 +40,9 @@ const checkbox = new CheckBox({
     label: "checkbox",
     color: "success",
     selected: false,
+});
+
+const radio = new Radio({
+    point: new Point(1, 100),
+    label: "label",
 });
