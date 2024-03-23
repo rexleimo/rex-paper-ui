@@ -1,29 +1,30 @@
 import "./style.css";
-import { RexPaperUi, Button } from "rex-paper-ui/src/index";
+import { RexPaperUi, Button, ButtonGroup } from "rex-paper-ui/src/index";
 import pulsIcon from "./plus.svg";
 import { Point } from "paper";
 
-new RexPaperUi(document.getElementById("app")!, {});
-new Button({
+const ui = new RexPaperUi(document.getElementById("app")!, {});
+const button1 = new Button({
     text: "Hello Word",
     color: "danger",
     // disable: true,
     startDecorator: pulsIcon,
-    point: new Point(0, 0),
 });
 
-new Button({
+const button2 = new Button({
     text: "Hello Word",
     color: "success",
     // disable: true,
     startDecorator: pulsIcon,
-    point: new Point(120, 0),
 });
 
-new Button({
+const button3 = new Button({
     text: "Hello Word",
     color: "primary",
     // disable: true,
     startDecorator: pulsIcon,
-    point: new Point(240, 0),
+});
+
+const buttonGroup = new ButtonGroup({
+    buttons: [button1, button2, button3],
 });

@@ -158,6 +158,14 @@ class Button extends RexComponent<ButtonOptions> {
             if (rect) {
                 rect.fillColor = this.primaryColorHover;
             }
+            const line = this.getChildren("line");
+            const rightLine = this.getChildren("rightLine");
+            if (line) {
+                line.fillColor = this.primaryColorHover;
+            }
+            if (rightLine) {
+                rightLine.fillColor = this.primaryColorHover;
+            }
         }
     }
 
@@ -171,6 +179,14 @@ class Button extends RexComponent<ButtonOptions> {
             const rect = this.getChildren("rect");
             if (rect) {
                 rect.fillColor = this.primaryColor;
+            }
+            const line = this.getChildren("line");
+            const rightLine = this.getChildren("rightLine");
+            if (line) {
+                line.fillColor = this.primaryColor;
+            }
+            if (rightLine) {
+                rightLine.fillColor = this.primaryColor;
             }
         }
     }
