@@ -1,5 +1,10 @@
 import "./style.css";
-import { RexPaperUi, Button, ButtonGroup } from "rex-paper-ui/src/index";
+import {
+    RexPaperUi,
+    Button,
+    ButtonGroup,
+    CheckBox,
+} from "rex-paper-ui/src/index";
 import pulsIcon from "./plus.svg";
 import { Point } from "paper";
 
@@ -27,4 +32,11 @@ const button3 = new Button({
 
 const buttonGroup = new ButtonGroup({
     buttons: [button1, button2, button3],
+});
+
+const checkbox = new CheckBox({
+    point: new Point(1, 50),
+    label: "checkbox",
+    color: "success",
+    selected: false,
 });
